@@ -1,8 +1,8 @@
 {
-  "name": "jeeplus-form",
+  "name": "jeeplus-form-lzq",
   "description": "A designer and generator of form base on Vue.js, make form development simple and efficient.",
   "version": "2.0.2",
-  "author": "liugaofeng <117575171@qq.com>",
+  "author": "Q <281747606@qq.com>",
   "license": "LGPL",
   "keywords": [
     "component",
