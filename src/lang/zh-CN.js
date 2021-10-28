@@ -96,6 +96,8 @@ export default {
         labelWidth: '表单标签宽度',
         size: '组件尺寸',
         customClass: '自定义Class',
+        initJs: '初始化表单Js,[_this]',
+        formulaJs: '表单公式Js,[_this]',
         customJs: '自定义Js',
         beforeSave: '保存前执行',
         afterSave: '保存后执行',
