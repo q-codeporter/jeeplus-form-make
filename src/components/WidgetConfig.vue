@@ -1774,8 +1774,8 @@ export default {
   dictService: null,
   makeFormService: null,
   beforeCreate() {
-    this.dictService = new DictService();
-    this.makeFormService = new MakeFormService();
+    this.dictService = new DictService(this);
+    this.makeFormService = new MakeFormService(this);
   },
   data() {
     return {
