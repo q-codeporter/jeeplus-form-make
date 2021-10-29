@@ -8,6 +8,11 @@ module.exports = {
     config.resolve.alias.set('@/', resolve('src'))
     // config.plugins.delete('prefetch')
   },
+  devServer: {
+    index: '/index.html', // 运行时，默认打开index页面
+    port: 8080,
+    proxy: 'http://121.36.89.229:8080'
+  },
   configureWebpack: config => {
     let plugins = [
       new TerserPlugin({
