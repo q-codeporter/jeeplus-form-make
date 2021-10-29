@@ -143,7 +143,7 @@ export default {
       }).then(({ data }) => {
         console.log("treeData------------------------------------------------");
         console.log(data);
-        this.valueData = data.treeData;
+        this.valueData = data;
         this.setTreeList(this.valueData);
         this.$nextTick(() => {
           this.initHandle();
