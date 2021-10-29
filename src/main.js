@@ -16,10 +16,13 @@ import VueEditor from "vue2-editor"
 import CustomComponent from './demo/CustomComponent.vue'
 import CustomVantField from './demo/VantField.vue'
 import CustomChart from './demo/Chart.vue'
+import axios from "./util/request"
 
 Vue.use(VueEditor)
 
 Vue.use(VueI18n)
+
+Vue.prototype.$http = axios
 
 Vue.locale('en-US', {...enLocale})
 Vue.locale('zh-CN', {...zhLocale})
