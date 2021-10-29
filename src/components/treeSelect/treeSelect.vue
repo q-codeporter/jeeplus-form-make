@@ -140,11 +140,10 @@ export default {
       this.$http({
         url: this.url,
         method: "get",
-      }).then((data) => {
+      }).then(({ data }) => {
         console.log("treeData------------------------------------------------");
         console.log(data);
-        this.valueData = data;
-        console.log(this.valueData);
+        this.valueData = data.treeData;
         this.setTreeList(this.valueData);
         this.$nextTick(() => {
           this.initHandle();

@@ -1774,8 +1774,8 @@ export default {
   dictService: null,
   makeFormService: null,
   beforeCreate() {
-    this.dictService = new DictService(this);
-    this.makeFormService = new MakeFormService(this);
+    this.dictService = new DictService();
+    this.makeFormService = new MakeFormService();
   },
   data() {
     return {
@@ -1838,10 +1838,10 @@ export default {
     this.valiatePattern(
       this.data && this.data.options ? this.data.options.pattern : ""
     );
-    this.dictService.list({ current: 1, size: -1 }).then((data) => {
+    this.dictService.list({ current: 1, size: -1 }).then(({ data }) => {
       console.log("records-----------------------------------------------");
-      this.dictList = data.records;
       console.log(this.dictList);
+      this.dictList = data.records;
     });
     if (this.bindDataTable) {
       this.makeFormService
